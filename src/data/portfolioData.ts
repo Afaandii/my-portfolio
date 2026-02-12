@@ -85,7 +85,7 @@ export const projects = [
     id: 3,
     title: "Molashes salon landing page",
     description:
-      "An AI-powered content generation tool that helps marketers create engaging copy in seconds.",
+      "Molashes Landing page website for branding salon nail art and eyelash businesses.",
     image: "/img/molashes-salon.png",
     tags: ["HTML", "CSS", "Javascript"],
     liveUrl: "https://syncdevelop.github.io/nailart-eyelash-landing-page",
