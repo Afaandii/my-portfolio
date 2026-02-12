@@ -121,11 +121,10 @@ export default function Projects() {
             <button
               key={f}
               onClick={() => setFilter(f as "all" | "featured")}
-              className={`px-6 py-2.5 rounded-full font-medium transition-all ${
-                filter === f
-                  ? "bg-linear-to-r from-primary to-secondary text-white shadow-lg"
-                  : "bg-surface border border-border hover:border-primary text-muted hover:text-foreground"
-              }`}
+              className={`px-6 py-2.5 rounded-full font-medium transition-all ${filter === f
+                ? "bg-primary text-background shadow-lg"
+                : "bg-surface border border-border hover:border-primary text-muted hover:text-foreground"
+                }`}
             >
               {f === "all" ? "All Projects" : "Featured"}
             </button>
@@ -158,7 +157,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       {/* Project Image Area */}
-      <div className="aspect-video relative overflow-hidden bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10">
+      <div className="aspect-video relative overflow-hidden bg-surface">
         {project.image && !imgError ? (
           <Image
             src={getImagePath(project.image)}
@@ -177,7 +176,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         )}
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-secondary/10" />
+        <div className="absolute inset-0 bg-background/5" />
 
         {/* Hover Overlay with Buttons */}
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-3">
@@ -185,7 +184,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 rounded-lg bg-linear-to-r from-primary to-secondary text-white text-sm font-medium hover:shadow-lg transition-all hover:-translate-y-0.5"
+            className="px-5 py-2.5 rounded-lg bg-primary text-background text-sm font-medium hover:opacity-90 transition-all hover:-translate-y-0.5"
           >
             Live Demo
           </a>

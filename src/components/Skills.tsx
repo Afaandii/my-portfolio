@@ -32,72 +32,35 @@ export default function Skills() {
     <section id="skills" className="section" ref={sectionRef}>
       <div className="container">
         <h2 className="section-title">My <span className="gradient-text">Skills</span></h2>
-        <p className="section-subtitle">Technologies and tools I work with</p>
+        <p className="text-center text-lg font-medium text-muted mb-6">Tech Stack I Love</p>
 
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex p-1 rounded-2xl bg-surface border border-border">
-            {skillCategories.map((cat) => (
-              <button
-                key={cat.key}
-                onClick={() => setActiveTab(cat.key)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all flex items-center gap-2 ${
-                  activeTab === cat.key
-                    ? "bg-gradient-to-r from-primary to-secondary text-white shadow-lg"
-                    : "text-muted hover:text-foreground"
-                }`}
-              >
-                <span>{cat.icon}</span>
-                <span className="hidden sm:inline">{cat.label}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="max-w-3xl mx-auto space-y-6">
-          {skills[activeTab].map((skill, i) => (
-            <div key={skill.name} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
-              <div className="flex justify-between mb-2">
-                <span className="font-medium">{skill.name}</span>
-                <span className="text-primary font-semibold">{skill.level}%</span>
-              </div>
-              <div className="skill-bar">
-                <div
-                  className="skill-progress"
-                  style={{ width: isVisible ? `${skill.level}%` : "0%", transitionDelay: `${i * 0.1}s` }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-16">
-          <h3 className="text-center text-lg font-medium text-muted mb-8">Tech Stack I Love</h3>
+        <div>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center">
             {[
-              { n: "JavaScript", e: <SiJavascript className="text-[#F7DF1E] w-full h-full" /> },
-              { n: "TypeScript", e: <SiTypescript className="text-[#3178C6] w-full h-full" /> },
-              { n: "Golang", e: <FaGolang className="text-[#00ADD8] w-full h-full" /> }, 
-              { n: "PHP", e: <SiPhp className="text-[#777BB4] w-full h-full" /> },
-              { n: "Java", e: <FaJava className="text-[#007396] w-full h-full" /> },
-              { n: "Express", e: <SiExpress className="text-white w-full h-full" /> }, 
-              { n: "React", e: <SiReact className="text-[#61DAFB] w-full h-full" /> }, 
-              { n: "Next.js", e: <SiNextdotjs className="bg-white rounded-full text-black w-full h-full border border-white" /> }, 
-              { n: "Svelte", e: <SiSvelte className="text-[#FF3E00] w-full h-full" /> }, 
-              { n: "Tailwind", e: <SiTailwindcss className="text-[#06B6D4] w-full h-full" /> },
-              { n: "Bootstrap", e: <SiBootstrap className="text-[#7952B3] w-full h-full" /> },
-              { n: "Laravel", e: <SiLaravel className="text-[#FF2D20] w-full h-full" /> },
-              { n: "CodeIgniter", e: <SiCodeigniter className="text-[#EF4223] w-full h-full" /> },
-              { n: "Gin", e: <SiGin className="text-[#00ADD8] w-full h-full" /> },
-              { n: "Node.js", e: <SiNodedotjs className="text-[#339933] w-full h-full" /> },
-              { n: "Composer", e: <SiComposer className="text-[#885630] w-full h-full" /> },
-              { n: "Supabase", e: <SiSupabase className="text-[#3ECF8E] w-full h-full" /> }, 
-              { n: "PostgreSQL", e: <SiPostgresql className="text-[#4169E1] w-full h-full" /> },
-              { n: "MySQL", e: <SiMysql className="text-[#4479A1] w-full h-full" /> },
-              { n: "Git", e: <FaGitAlt className="text-[#F05032] w-full h-full" /> }, 
-              { n: "Figma", e: <SiFigma className="text-[#F24E1E] w-full h-full" /> }, 
+              { n: "JavaScript", e: <SiJavascript className="w-full h-full" /> },
+              { n: "TypeScript", e: <SiTypescript className="w-full h-full" /> },
+              { n: "Golang", e: <FaGolang className="w-full h-full" /> },
+              { n: "PHP", e: <SiPhp className="w-full h-full" /> },
+              { n: "Java", e: <FaJava className="w-full h-full" /> },
+              { n: "Express", e: <SiExpress className="w-full h-full" /> },
+              { n: "React", e: <SiReact className="w-full h-full" /> },
+              { n: "Next.js", e: <SiNextdotjs className="w-full h-full" /> },
+              { n: "Svelte", e: <SiSvelte className="w-full h-full" /> },
+              { n: "Tailwind", e: <SiTailwindcss className="w-full h-full" /> },
+              { n: "Bootstrap", e: <SiBootstrap className="w-full h-full" /> },
+              { n: "Laravel", e: <SiLaravel className="w-full h-full" /> },
+              { n: "CodeIgniter", e: <SiCodeigniter className="w-full h-full" /> },
+              { n: "Gin", e: <SiGin className="w-full h-full" /> },
+              { n: "Node.js", e: <SiNodedotjs className="w-full h-full" /> },
+              { n: "Composer", e: <SiComposer className="w-full h-full" /> },
+              { n: "Supabase", e: <SiSupabase className="w-full h-full" /> },
+              { n: "PostgreSQL", e: <SiPostgresql className="w-full h-full" /> },
+              { n: "MySQL", e: <SiMysql className="w-full h-full" /> },
+              { n: "Git", e: <FaGitAlt className="w-full h-full" /> },
+              { n: "Figma", e: <SiFigma className="w-full h-full" /> },
             ].map((t, i) => (
-              <div 
-                key={t.n} 
+              <div
+                key={t.n}
                 className="group relative aspect-square p-6 rounded-2xl bg-surface/50 border border-border/50 hover:border-primary/50 hover:bg-surface hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex items-center justify-center hover:-translate-y-2"
                 title={t.n}
               >

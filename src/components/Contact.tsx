@@ -2,15 +2,15 @@
 
 import { personalInfo, services } from "@/data/portfolioData";
 import { useState } from "react";
-import { 
-  FaEnvelope, 
-  FaPhone, 
-  FaMapMarkerAlt, 
-  FaGithub, 
-  FaLinkedin, 
-  FaTelegram, 
-  FaInstagram, 
-  FaPaperPlane, 
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+  FaTelegram,
+  FaInstagram,
+  FaPaperPlane,
   FaSpinner,
   FaCopy,
   FaCheck
@@ -43,15 +43,15 @@ export default function Contact() {
   return (
     <section id="contact" className="section relative overflow-hidden py-24">
       {/* Dynamic Background Elements */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -z-10 animate-pulse-glow" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] -z-10 animate-pulse-glow" style={{ animationDelay: "1s" }} />
-      
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[100px] -z-10" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[100px] -z-10" />
+
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-500 text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-border text-primary text-sm font-medium mb-6">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
             Available for new projects
           </div>
@@ -69,35 +69,35 @@ export default function Contact() {
             {/* Info Cards */}
             <div className="grid gap-6">
               {[
-                { 
-                  icon: <FaEnvelope className="w-5 h-5" />, 
-                  label: "Email", 
+                {
+                  icon: <FaEnvelope className="w-5 h-5" />,
+                  label: "Email",
                   value: personalInfo.email,
                   action: () => copyToClipboard(personalInfo.email, "email"),
                   type: "email"
                 },
-                { 
-                  icon: <FaPhone className="w-5 h-5" />, 
-                  label: "Phone", 
+                {
+                  icon: <FaPhone className="w-5 h-5" />,
+                  label: "Phone",
                   value: personalInfo.phone,
                   action: () => copyToClipboard(personalInfo.phone, "phone"),
                   type: "phone"
                 },
-                { 
-                  icon: <FaMapMarkerAlt className="w-5 h-5" />, 
-                  label: "Location", 
+                {
+                  icon: <FaMapMarkerAlt className="w-5 h-5" />,
+                  label: "Location",
                   value: personalInfo.location,
                   action: null,
                   type: "text"
                 }
               ].map((item, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="group relative p-6 rounded-2xl bg-surface/50 border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 backdrop-blur-sm overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   <div className="relative flex items-center gap-6">
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                    <div className="w-14 h-14 rounded-2xl bg-surface border border-border/50 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300 shadow-inner">
                       {item.icon}
                     </div>
                     <div className="flex-1">
@@ -105,13 +105,13 @@ export default function Contact() {
                       <h4 className="text-lg font-semibold">{item.value}</h4>
                     </div>
                     {item.action && (
-                      <button 
+                      <button
                         onClick={item.action}
                         className="p-2 rounded-lg bg-surface hover:bg-primary/10 text-muted hover:text-primary transition-colors relative"
                         title="Copy to clipboard"
                       >
                         {copiedField === item.type ? (
-                          <FaCheck className="w-4 h-4 text-green-500" />
+                          <FaCheck className="w-4 h-4 text-primary" />
                         ) : (
                           <FaCopy className="w-4 h-4" />
                         )}
@@ -128,7 +128,7 @@ export default function Contact() {
             </div>
 
             {/* Social Links */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-surface/80 to-surface/40 border border-border/50 backdrop-blur-xl">
+            <div className="p-8 rounded-3xl bg-linear-to-br from-surface/80 to-surface/40 border border-border/50 backdrop-blur-xl">
               <h3 className="text-xl font-semibold mb-6">Connect on Social</h3>
               <div className="flex flex-wrap gap-4">
                 {Object.entries(personalInfo.social).map(([key, url], idx) => (
@@ -137,7 +137,7 @@ export default function Contact() {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center text-muted hover:text-white hover:bg-gradient-to-br hover:from-primary hover:to-secondary hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-lg hover:shadow-primary/20"
+                    className="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center text-muted hover:text-background hover:bg-primary hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-lg hover:shadow-primary/20"
                     style={{ transitionDelay: `${idx * 50}ms` }}
                   >
                     {key === "github" && <FaGithub className="w-5 h-5" />}
@@ -155,8 +155,8 @@ export default function Contact() {
             <div className="p-8 md:p-10 rounded-3xl bg-surface/50 border border-border/50 backdrop-blur-md relative overflow-hidden group">
               {/* Form Background Decor */}
               <div className="absolute -top-24 -right-24 w-48 h-48 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-colors duration-500" />
-              
-              <h3 className="text-2xl font-bold mb-2 mb-8">Send Message</h3>
+
+              <h3 className="text-2xl font-bold mb-8">Send Message</h3>
 
               <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -208,10 +208,10 @@ export default function Contact() {
                   />
                 </div>
 
-                <button 
-                  type="submit" 
-                  disabled={isSubmitting} 
-                  className="w-full py-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg hover:shadow-lg hover:shadow-primary/25 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full py-4 rounded-xl bg-primary text-background font-bold text-lg hover:shadow-lg hover:shadow-primary/25 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                 >
                   {isSubmitting ? (
                     <>
