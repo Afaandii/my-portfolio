@@ -32,46 +32,9 @@ export default function Skills() {
     <section id="skills" className="section" ref={sectionRef}>
       <div className="container">
         <h2 className="section-title">My <span className="gradient-text">Skills</span></h2>
-        <p className="section-subtitle">Technologies and tools I work with</p>
+          <p className="text-center text-lg font-medium text-muted mb-6">Tech Stack I Love</p>
 
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex p-1 rounded-2xl bg-surface border border-border">
-            {skillCategories.map((cat) => (
-              <button
-                key={cat.key}
-                onClick={() => setActiveTab(cat.key)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all flex items-center gap-2 ${
-                  activeTab === cat.key
-                    ? "bg-gradient-to-r from-primary to-secondary text-white shadow-lg"
-                    : "text-muted hover:text-foreground"
-                }`}
-              >
-                <span>{cat.icon}</span>
-                <span className="hidden sm:inline">{cat.label}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="max-w-3xl mx-auto space-y-6">
-          {skills[activeTab].map((skill, i) => (
-            <div key={skill.name} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
-              <div className="flex justify-between mb-2">
-                <span className="font-medium">{skill.name}</span>
-                <span className="text-primary font-semibold">{skill.level}%</span>
-              </div>
-              <div className="skill-bar">
-                <div
-                  className="skill-progress"
-                  style={{ width: isVisible ? `${skill.level}%` : "0%", transitionDelay: `${i * 0.1}s` }}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-16">
-          <h3 className="text-center text-lg font-medium text-muted mb-8">Tech Stack I Love</h3>
+        <div>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center">
             {[
               { n: "JavaScript", e: <SiJavascript className="text-[#F7DF1E] w-full h-full" /> },

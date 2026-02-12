@@ -303,7 +303,7 @@ body {
 
 /* Section Styles */
 .section {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   position: relative;
   scroll-margin-top: 80px;
 }
@@ -311,7 +311,6 @@ body {
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
