@@ -1,6 +1,6 @@
 "use client";
 
-import { personalInfo, services } from "@/data/portfolioData";
+import { personalInfo } from "@/data/portfolioData";
 import { useState } from "react";
 import {
   FaEnvelope,
@@ -13,11 +13,16 @@ import {
   FaPaperPlane,
   FaSpinner,
   FaCopy,
-  FaCheck
+  FaCheck,
 } from "react-icons/fa";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -59,7 +64,9 @@ export default function Contact() {
             Let&apos;s Work <span className="gradient-text">Together</span>
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto">
-            Have a project in mind or want to discuss the latest tech? I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            Have a project in mind or want to discuss the latest tech? I&apos;m
+            always open to discussing new projects, creative ideas or
+            opportunities to be part of your visions.
           </p>
         </div>
 
@@ -74,22 +81,22 @@ export default function Contact() {
                   label: "Email",
                   value: personalInfo.email,
                   action: () => copyToClipboard(personalInfo.email, "email"),
-                  type: "email"
+                  type: "email",
                 },
                 {
                   icon: <FaPhone className="w-5 h-5" />,
                   label: "Phone",
                   value: personalInfo.phone,
                   action: () => copyToClipboard(personalInfo.phone, "phone"),
-                  type: "phone"
+                  type: "phone",
                 },
                 {
                   icon: <FaMapMarkerAlt className="w-5 h-5" />,
                   label: "Location",
                   value: personalInfo.location,
                   action: null,
-                  type: "text"
-                }
+                  type: "text",
+                },
               ].map((item, idx) => (
                 <div
                   key={idx}
@@ -101,7 +108,9 @@ export default function Contact() {
                       {item.icon}
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm text-muted font-medium mb-1">{item.label}</p>
+                      <p className="text-sm text-muted font-medium mb-1">
+                        {item.label}
+                      </p>
                       <h4 className="text-lg font-semibold">{item.value}</h4>
                     </div>
                     {item.action && (
@@ -161,22 +170,30 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium ml-1 text-muted">Name</label>
+                    <label className="text-sm font-medium ml-1 text-muted">
+                      Name
+                    </label>
                     <input
                       type="text"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       required
                       className="w-full px-5 py-4 rounded-xl bg-background/50 border border-border focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none"
                       placeholder="John Doe"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium ml-1 text-muted">Email</label>
+                    <label className="text-sm font-medium ml-1 text-muted">
+                      Email
+                    </label>
                     <input
                       type="email"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       required
                       className="w-full px-5 py-4 rounded-xl bg-background/50 border border-border focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none"
                       placeholder="john@example.com"
@@ -185,11 +202,15 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium ml-1 text-muted">Subject</label>
+                  <label className="text-sm font-medium ml-1 text-muted">
+                    Subject
+                  </label>
                   <input
                     type="text"
                     value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, subject: e.target.value })
+                    }
                     required
                     className="w-full px-5 py-4 rounded-xl bg-background/50 border border-border focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none"
                     placeholder="Project Inquiry"
@@ -197,10 +218,14 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium ml-1 text-muted">Message</label>
+                  <label className="text-sm font-medium ml-1 text-muted">
+                    Message
+                  </label>
                   <textarea
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     required
                     rows={5}
                     className="w-full px-5 py-4 rounded-xl bg-background/50 border border-border focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none resize-none"

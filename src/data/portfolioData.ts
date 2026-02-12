@@ -21,10 +21,9 @@ export const aboutMe = {
 
 When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while reading tech blogs.`,
   highlights: [
-    { label: "Years Experience", value: "5+" },
-    { label: "Projects Completed", value: "50+" },
-    { label: "Happy Clients", value: "30+" },
-    { label: "Coffee Cups", value: "∞" },
+    { label: "Years Experience", value: "1+" },
+    { label: "Projects Completed", value: "10+" },
+    { label: "Happy Clients", value: "10+" },
   ],
 };
 

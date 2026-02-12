@@ -1,7 +1,7 @@
 "use client";
 
 import { aboutMe, personalInfo } from "@/data/portfolioData";
-import { FaDownload, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -20,9 +20,9 @@ export default function About() {
             <div className="relative flex justify-center lg:justify-start">
               <div className="relative w-full aspect-4/5 max-w-md rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
                 <img
-                  src="/img/foto-me.jpg"
+                  src="/img/afandi.JPG"
                   alt="About Ahmad Afandi"
-                  className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover object-center transition-all duration-700"
                 />
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function About() {
                   <span className="w-8 h-1 bg-primary rounded-full" />
                   Who am I?
                 </h3>
-                {aboutMe.bio.split('\n\n').map((paragraph, index) => (
+                {aboutMe.bio.split("\n\n").map((paragraph, index) => (
                   <p key={index} className="text-muted leading-relaxed mb-4">
                     {paragraph}
                   </p>
@@ -50,7 +50,9 @@ export default function About() {
                     <p className="text-3xl font-bold text-primary mb-1">
                       {stat.value}
                     </p>
-                    <p className="text-muted text-xs upperca  se tracking-widest">{stat.label}</p>
+                    <p className="text-muted text-xs upperca  se tracking-widest">
+                      {stat.label}
+                    </p>
                   </div>
                 ))}
               </div>
