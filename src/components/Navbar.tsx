@@ -72,7 +72,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "glass py-3 shadow-lg"
+          ? "bg-neutral-900/80 backdrop-blur-2xl py-3"
           : "py-5 bg-transparent"
       }`}
     >
@@ -105,19 +105,6 @@ export default function Navbar() {
               )}
             </Link>
           ))}
-          
-          {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-surface-hover transition-colors"
-            aria-label="Toggle theme"
-          >
-            {isDark ? (
-              <FaSun className="w-5 h-5 text-yellow-400" />
-            ) : (
-              <FaMoon className="w-5 h-5 text-slate-700" />
-            )}
-          </button>
         </div>
 
         {/* Mobile Menu Button */}
