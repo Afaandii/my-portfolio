@@ -19,11 +19,11 @@ export default function About() {
           <div className="animate-fade-in-up">
             <div className="relative pt-6 pb-8 pr-6">
               {/* Decorative Elements - Behind */}
-              <div className="absolute bottom-0 right-0 w-full h-full border-2 border-primary/30 rounded-2xl" />
-              <div className="absolute bottom-3 right-4 w-full h-full border border-secondary/20 rounded-2xl" />
-              
+              <div className="absolute bottom-0 right-0 w-full h-full border-2 border-primary/20 rounded-2xl" />
+              <div className="absolute bottom-3 right-4 w-full h-full border border-primary/10 rounded-2xl" />
+
               {/* Main Card - Smaller and centered */}
-              <div className="relative w-[85%] aspect-square max-w-sm rounded-2xl overflow-hidden border border-border bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 m-auto">
+              <div className="relative w-[85%] aspect-square max-w-sm rounded-2xl overflow-hidden border border-border bg-surface m-auto">
                 <img
                   src="/img/foto-me.jpg"
                   alt="About Ahmad Afandi"
@@ -71,7 +71,7 @@ export default function About() {
                 {aboutMe.highlights.map((stat, index) => (
                   <div
                     key={index}
-                    className="text-center p-4 rounded-xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-border hover:border-primary/30 transition-colors"
+                    className="text-center p-4 rounded-xl bg-linear-to-br from-primary/5 to-secondary/5 border border-border hover:border-primary/30 transition-colors"
                   >
                     <p className="text-2xl md:text-3xl font-bold gradient-text">
                       {stat.value}

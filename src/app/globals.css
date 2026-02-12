@@ -2,37 +2,26 @@
 
 /* Custom CSS Variables */
 :root {
-  /* Colors - Light Mode */
-  --background: #f8fafc;
-  --foreground: #0f172a;
-  --primary: #6366f1;
-  --primary-hover: #4f46e5;
-  --secondary: #8b5cf6;
-  --accent: #22d3ee;
-  --surface: #ffffff;
-  --surface-hover: #f1f5f9;
-  --border: #e2e8f0;
-  --muted: #64748b;
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.3);
-}
-
-.dark {
-  /* Colors - Dark Mode */
-  --background: #0f172a;
-  --foreground: #f8fafc;
-  --primary: #818cf8;
-  --primary-hover: #6366f1;
-  --secondary: #a78bfa;
-  --accent: #22d3ee;
-  --surface: #1e293b;
-  --surface-hover: #334155;
-  --border: #334155;
-  --muted: #94a3b8;
-  --card-bg: rgba(30, 41, 59, 0.8);
-  --glass-bg: rgba(15, 23, 42, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  /* Colors - Minimalism Duo-Tone (Dark Only) */
+  --background: #02040F;
+  /* Ink Black */
+  --foreground: #E5DADA;
+  /* Dust Grey */
+  --primary: #E5DADA;
+  --primary-foreground: #02040F;
+  /* Contrast for buttons */
+  --primary-hover: #ffffff;
+  --secondary: #E5DADA;
+  --accent: #E5DADA;
+  --surface: #0a0c17;
+  /* Slightly lighter Ink Black for surfaces */
+  --surface-hover: #151825;
+  --border: rgba(229, 218, 218, 0.15);
+  /* Dust Grey with low opacity */
+  --muted: #A09898;
+  --card-bg: rgba(10, 12, 23, 0.8);
+  --glass-bg: rgba(2, 4, 15, 0.7);
+  --glass-border: rgba(229, 218, 218, 0.1);
 }
 
 /* Tailwind Theme Inline */
@@ -40,6 +29,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
   --color-primary-hover: var(--primary-hover);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
@@ -75,7 +65,7 @@ body {
 /* Selection */
 ::selection {
   background: var(--primary);
-  color: white;
+  color: var(--background);
 }
 
 /* Scrollbar */
@@ -241,9 +231,9 @@ body {
   -webkit-backdrop-filter: blur(64px);
 }
 
-/* Gradient Text */
+/* Gradient Text - Now minimalist monochrome */
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+  background: linear-gradient(135deg, var(--primary), var(--foreground));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -251,7 +241,7 @@ body {
 
 /* Gradient Background */
 .gradient-bg {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--primary);
 }
 
 /* Card Hover Effect */
@@ -266,8 +256,8 @@ body {
 
 /* Button Styles */
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: white;
+  background: var(--primary);
+  color: var(--primary-foreground);
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -279,7 +269,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 30px rgba(229, 218, 218, 0.2);
 }
 
 .btn-secondary {
@@ -339,10 +329,10 @@ body {
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: var(--primary);
   border-radius: 6px;
   transition: width 1s ease-out;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 2px 8px rgba(229, 218, 218, 0.2);
 }
 
 /* Timeline */
