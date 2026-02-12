@@ -3,7 +3,6 @@
 import { projects } from "@/data/portfolioData";
 import { JSX, useState } from "react";
 
-// Project type icons - more professional than emojis
 const projectIcons: { [key: number]: JSX.Element } = {
   1: (
     <svg
@@ -145,7 +144,7 @@ export default function Projects() {
 
 function ProjectCard({ project, index }: { project: any; index: number }) {
   const [imgError, setImgError] = useState(false);
-  
+
   // Helper to handle image paths
   const getImagePath = (path: string) => {
     if (!path) return "";
