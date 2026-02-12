@@ -130,64 +130,64 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    type: "work",
-    title: "Senior Full Stack Developer",
-    company: "Tech Innovators Inc.",
-    location: "Jakarta, Indonesia",
-    period: "2022 - Present",
+    type: "Intership",
+    title: "Junior Backend Developer",
+    company: "CV Purnama Kreatifa",
+    location: "Sidoarjo, Indonesia",
+    period: "January - April 2025",
     description:
-      "Leading development of enterprise web applications, mentoring junior developers, and architecting scalable solutions.",
+      "Development ERP apps of web applications with tech stack CodeIgniter 3 and git for colabortion teams.",
     highlights: [
-      "Led team of 5 developers on major platform redesign",
-      "Reduced load time by 60% through optimization",
-      "Implemented CI/CD pipeline reducing deployment time by 80%",
+      "Developing ERP applications with CodeIgniter 3",
+      "Using Git to colaboration teams",
+      "Using Sftp and FileZilla to transfer, manage, and access files between systems over a network",
     ],
   },
-  {
-    id: 2,
-    type: "work",
-    title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    location: "Bandung, Indonesia",
-    period: "2020 - 2022",
-    description:
-      "Developed and maintained multiple client projects using modern web technologies.",
-    highlights: [
-      "Built 15+ client websites and web applications",
-      "Introduced TypeScript to the tech stack",
-      "Mentored 3 junior developers",
-    ],
-  },
-  {
-    id: 3,
-    type: "work",
-    title: "Frontend Developer",
-    company: "Creative Agency",
-    location: "Jakarta, Indonesia",
-    period: "2019 - 2020",
-    description:
-      "Created responsive and interactive user interfaces for various client projects.",
-    highlights: [
-      "Developed pixel-perfect UI implementations",
-      "Collaborated closely with designers",
-      "Improved website performance scores",
-    ],
-  },
-  {
-    id: 4,
-    type: "education",
-    title: "Bachelor of Computer Science",
-    company: "University of Indonesia",
-    location: "Depok, Indonesia",
-    period: "2015 - 2019",
-    description:
-      "Graduated with honors. Focus on software engineering and web development.",
-    highlights: [
-      "GPA: 3.8/4.0",
-      "Best Final Project Award",
-      "Active in programming community",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   type: "work",
+  //   title: "Full Stack Developer",
+  //   company: "Digital Solutions Ltd.",
+  //   location: "Bandung, Indonesia",
+  //   period: "2020 - 2022",
+  //   description:
+  //     "Developed and maintained multiple client projects using modern web technologies.",
+  //   highlights: [
+  //     "Built 15+ client websites and web applications",
+  //     "Introduced TypeScript to the tech stack",
+  //     "Mentored 3 junior developers",
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   type: "work",
+  //   title: "Frontend Developer",
+  //   company: "Creative Agency",
+  //   location: "Jakarta, Indonesia",
+  //   period: "2019 - 2020",
+  //   description:
+  //     "Created responsive and interactive user interfaces for various client projects.",
+  //   highlights: [
+  //     "Developed pixel-perfect UI implementations",
+  //     "Collaborated closely with designers",
+  //     "Improved website performance scores",
+  //   ],
+  // },
+  // {
+  //   id: 4,
+  //   type: "education",
+  //   title: "Bachelor of Computer Science",
+  //   company: "University of Indonesia",
+  //   location: "Depok, Indonesia",
+  //   period: "2015 - 2019",
+  //   description:
+  //     "Graduated with honors. Focus on software engineering and web development.",
+  //   highlights: [
+  //     "GPA: 3.8/4.0",
+  //     "Best Final Project Award",
+  //     "Active in programming community",
+  //   ],
+  // },
 ];
 
 export const services = [

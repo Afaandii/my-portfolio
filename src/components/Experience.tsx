@@ -1,36 +1,42 @@
 "use client";
 
 import { experience } from "@/data/portfolioData";
-import { FaBriefcase, FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt, FaCheckCircle } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaCalendarAlt,
+  FaMapMarkerAlt,
+  FaCheckCircle,
+} from "react-icons/fa";
 
 export default function Experience() {
   return (
     <section id="experience" className="section">
       <div className="container">
-        <h2 className="section-title">My <span className="gradient-text">Experience</span></h2>
-        <p className="section-subtitle">My professional journey and education background</p>
+        <h2 className="section-title">
+          My <span className="gradient-text">Experience</span>
+        </h2>
+        <p className="section-subtitle">
+          My professional journey and education background
+        </p>
 
         <div className="max-w-3xl mx-auto">
           {experience.map((item, i) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className="timeline-item animate-fade-in-up"
               style={{ animationDelay: `${i * 0.15}s` }}
             >
               <div className="p-6 rounded-2xl bg-surface border border-border hover:border-primary/30 transition-all hover:shadow-lg">
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                   <div>
-                    <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium mb-3 ${
-                      item.type === "work" 
-                        ? "bg-primary/10 text-primary border border-primary/20" 
-                        : "bg-secondary/10 text-secondary border border-secondary/20"
-                    }`}>
-                      {item.type === "work" ? (
-                        <FaBriefcase className="w-3.5 h-3.5" />
-                      ) : (
-                        <FaGraduationCap className="w-3.5 h-3.5" />
-                      )}
-                      {item.type === "work" ? "Work" : "Education"}
+                    <span
+                      className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium mb-3 ${
+                        item.type === "work"
+                          ? "bg-primary/10 text-primary border border-primary/20"
+                          : "bg-secondary/10 text-secondary border border-secondary/20"
+                      }`}
+                    >
+                      <FaBriefcase className="w-3.5 h-3.5" /> {item.type}
                     </span>
                     <h3 className="text-lg font-semibold">{item.title}</h3>
                     <p className="text-primary font-medium">{item.company}</p>
@@ -46,11 +52,16 @@ export default function Experience() {
                     </span>
                   </div>
                 </div>
-                <p className="text-muted mb-4 text-sm leading-relaxed">{item.description}</p>
+                <p className="text-muted mb-4 text-sm leading-relaxed">
+                  {item.description}
+                </p>
                 <ul className="space-y-2">
                   {item.highlights.map((h, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm text-muted">
-                      <span className="text-primary mt-0.5 flex-shrink-0">
+                    <li
+                      key={j}
+                      className="flex items-start gap-3 text-sm text-muted"
+                    >
+                      <span className="text-primary mt-0.5 shrink-0">
                         <FaCheckCircle className="w-4 h-4" />
                       </span>
                       {h}
