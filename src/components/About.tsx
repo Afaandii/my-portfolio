@@ -50,7 +50,7 @@ export default function About() {
                     <p className="text-3xl font-bold text-primary mb-1">
                       {stat.value}
                     </p>
-                    <p className="text-muted text-xs uppercase tracking-widest">{stat.label}</p>
+                    <p className="text-muted text-xs upperca  se tracking-widest">{stat.label}</p>
                   </div>
                 ))}
               </div>

@@ -33,18 +33,22 @@ export const metadata: Metadata = {
   },
 };
 
+import SmoothScroll from "@/components/SmoothScroll";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        <main>{children}</main>
+        <SmoothScroll>
+          <Navbar />
+          <main>{children}</main>
+        </SmoothScroll>
       </body>
     </html>
   );
