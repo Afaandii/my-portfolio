@@ -1,7 +1,8 @@
 export const personalInfo = {
   name: "Ahmad Afandi",
   title: "Full Stack Developer",
-  tagline: "Full-stack developer specializing in scalable backend systems with Go and PHP",
+  tagline:
+    "Full-stack developer specializing in scalable backend systems with Go and PHP",
   email: "ahmad.afandi.cv@gmail.com",
   phone: "+62 812 3456 7890",
   location: "Sidoarjo, Indonesia",
@@ -61,8 +62,9 @@ export const projects = [
   {
     id: 1,
     title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with payment integration, inventory management, and analytics dashboard.",
-    image: "/projects/ecommerce.jpg",
+    description:
+      "A full-featured e-commerce platform with payment integration, inventory management, and analytics dashboard.",
+    image: "/img/ecommerce.jpg",
     tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/johndoe/ecommerce",
@@ -71,8 +73,9 @@ export const projects = [
   {
     id: 2,
     title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
-    image: "/projects/taskapp.jpg",
+    description:
+      "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
+    image: "/img/taskapp.jpg",
     tags: ["React", "Firebase", "Tailwind CSS"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/johndoe/taskapp",
@@ -80,19 +83,21 @@ export const projects = [
   },
   {
     id: 3,
-    title: "AI Content Generator",
-    description: "An AI-powered content generation tool that helps marketers create engaging copy in seconds.",
-    image: "/projects/aicontent.jpg",
-    tags: ["Next.js", "OpenAI", "MongoDB"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/johndoe/aicontent",
+    title: "Molashes salon landing page",
+    description:
+      "An AI-powered content generation tool that helps marketers create engaging copy in seconds.",
+    image: "/img/molashes-salon.png",
+    tags: ["HTML", "CSS", "Javascript"],
+    liveUrl: "https://syncdevelop.github.io/nailart-eyelash-landing-page",
+    githubUrl: "https://github.com/SyncDevelop/nailart-eyelash-landing-page",
     featured: true,
   },
   {
     id: 4,
     title: "Fitness Tracking App",
-    description: "Mobile-first fitness tracking application with workout plans, nutrition logging, and social features.",
-    image: "/projects/fitness.jpg",
+    description:
+      "Mobile-first fitness tracking application with workout plans, nutrition logging, and social features.",
+    image: "/img/fitness.jpg",
     tags: ["React Native", "Node.js", "GraphQL"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/johndoe/fitness",
@@ -101,8 +106,9 @@ export const projects = [
   {
     id: 5,
     title: "Real Estate Platform",
-    description: "Property listing and management platform with virtual tours and mortgage calculator.",
-    image: "/projects/realestate.jpg",
+    description:
+      "Property listing and management platform with virtual tours and mortgage calculator.",
+    image: "/img/realestate.jpg",
     tags: ["Vue.js", "Django", "PostgreSQL"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/johndoe/realestate",
@@ -111,8 +117,9 @@ export const projects = [
   {
     id: 6,
     title: "Learning Management System",
-    description: "Complete LMS with course creation, student progress tracking, and certification system.",
-    image: "/projects/lms.jpg",
+    description:
+      "Complete LMS with course creation, student progress tracking, and certification system.",
+    image: "/img/lms.jpg",
     tags: ["Next.js", "Prisma", "AWS"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/johndoe/lms",
@@ -128,7 +135,8 @@ export const experience = [
     company: "Tech Innovators Inc.",
     location: "Jakarta, Indonesia",
     period: "2022 - Present",
-    description: "Leading development of enterprise web applications, mentoring junior developers, and architecting scalable solutions.",
+    description:
+      "Leading development of enterprise web applications, mentoring junior developers, and architecting scalable solutions.",
     highlights: [
       "Led team of 5 developers on major platform redesign",
       "Reduced load time by 60% through optimization",
@@ -142,7 +150,8 @@ export const experience = [
     company: "Digital Solutions Ltd.",
     location: "Bandung, Indonesia",
     period: "2020 - 2022",
-    description: "Developed and maintained multiple client projects using modern web technologies.",
+    description:
+      "Developed and maintained multiple client projects using modern web technologies.",
     highlights: [
       "Built 15+ client websites and web applications",
       "Introduced TypeScript to the tech stack",
@@ -156,7 +165,8 @@ export const experience = [
     company: "Creative Agency",
     location: "Jakarta, Indonesia",
     period: "2019 - 2020",
-    description: "Created responsive and interactive user interfaces for various client projects.",
+    description:
+      "Created responsive and interactive user interfaces for various client projects.",
     highlights: [
       "Developed pixel-perfect UI implementations",
       "Collaborated closely with designers",
@@ -170,7 +180,8 @@ export const experience = [
     company: "University of Indonesia",
     location: "Depok, Indonesia",
     period: "2015 - 2019",
-    description: "Graduated with honors. Focus on software engineering and web development.",
+    description:
+      "Graduated with honors. Focus on software engineering and web development.",
     highlights: [
       "GPA: 3.8/4.0",
       "Best Final Project Award",
@@ -183,19 +194,22 @@ export const services = [
   {
     id: 1,
     title: "Web Development",
-    description: "Building fast, responsive, and SEO-friendly websites using modern technologies.",
+    description:
+      "Building fast, responsive, and SEO-friendly websites using modern technologies.",
     icon: "💻",
   },
   {
     id: 2,
     title: "Mobile App Development",
-    description: "Creating cross-platform mobile applications with React Native.",
+    description:
+      "Creating cross-platform mobile applications with React Native.",
     icon: "📱",
   },
   {
     id: 3,
     title: "UI/UX Design",
-    description: "Designing intuitive user interfaces with focus on user experience.",
+    description:
+      "Designing intuitive user interfaces with focus on user experience.",
     icon: "🎨",
   },
   {
