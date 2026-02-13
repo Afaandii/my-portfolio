@@ -71,13 +71,13 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Company Profile",
     description:
-      "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
-    image: "/img/taskapp.jpg",
-    tags: ["React", "Firebase", "Tailwind CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/johndoe/taskapp",
+      "Alamon Go company profile web application, for branding the Alamon Go milk business",
+    image: "/img/company-profile.png",
+    tags: ["Svelte", "Laravel", "Tailwind CSS"],
+    liveUrl: "https://company-profile-app-three.vercel.app",
+    githubUrl: "https://github.com/Afaandii/company-profile-app",
     featured: true,
   },
   {
