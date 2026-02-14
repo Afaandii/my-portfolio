@@ -60,13 +60,13 @@ export const skills = {
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Distro Zone E-Commerce",
     description:
-      "A full-featured e-commerce platform with payment integration, inventory management, and analytics dashboard.",
-    image: "/img/ecommerce.jpg",
-    tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/johndoe/ecommerce",
+      "E-commerce platform with payment integration, inventory management, and report laba.",
+    image: "/img/distro-zone.png",
+    tags: ["React.js", "Golang", "PostgreSQL", "Supabase"],
+    liveUrl: "aplikasi-distro-zone-lsp-website.vercel.app",
+    githubUrl: "https://github.com/Afaandii/aplikasi-distro-zone-lsp-website",
     featured: true,
   },
   {
