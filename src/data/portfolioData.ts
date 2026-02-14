@@ -65,7 +65,7 @@ export const projects = [
       "E-commerce platform with payment integration, inventory management, and report laba.",
     image: "/img/distro-zone.png",
     tags: ["React.js", "Golang", "PostgreSQL", "Supabase"],
-    liveUrl: "aplikasi-distro-zone-lsp-website.vercel.app",
+    liveUrl: "https://aplikasi-distro-zone-lsp-website.vercel.app",
     githubUrl: "https://github.com/Afaandii/aplikasi-distro-zone-lsp-website",
     featured: true,
   },
