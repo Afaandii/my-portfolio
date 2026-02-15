@@ -17,9 +17,9 @@ export const personalInfo = {
 };
 
 export const aboutMe = {
-  bio: `I'm a passionate Full Stack Developer with 5+ years of experience building web applications that users love. I specialize in React, Next.js, and Node.js, with a keen eye for UI/UX design.
+  bio: `I'm a passionate Full Stack Developer with 1+ years of experience building web applications that users love. I specialize in React, Vue, Next.js, Laravel, CodeIgniter, Gin, Golang, PHP, MySQL, PostgreSQL, with a keen eye for UI/UX design and responsive design.
 
-When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while reading tech blogs.`,
+When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while reading the latest tech blogs.`,
   highlights: [
     { label: "Years Experience", value: "1+" },
     { label: "Projects Completed", value: "10+" },
