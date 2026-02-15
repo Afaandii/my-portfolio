@@ -27,16 +27,39 @@ export default function Contact() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSuccess(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
+    setErrorMessage(null);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/ahmad.afandi.cv@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          _captcha: "false",
+          _template: "table",
+        }),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        setErrorMessage("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setErrorMessage("Failed to send message. Please check your connection.");
+    } finally {
       setIsSubmitting(false);
-      setTimeout(() => setIsSuccess(false), 3000);
-    }, 1500);
+    }
   };
 
   const copyToClipboard = (text: string, field: string) => {
@@ -175,6 +198,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="text"
+                      name="name"
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
@@ -190,6 +214,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
@@ -207,6 +232,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    name="subject"
                     value={formData.subject}
                     onChange={(e) =>
                       setFormData({ ...formData, subject: e.target.value })
@@ -222,6 +248,7 @@ export default function Contact() {
                     Message
                   </label>
                   <textarea
+                    name="message"
                     value={formData.message}
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
@@ -255,6 +282,12 @@ export default function Contact() {
                     </>
                   )}
                 </button>
+
+                {errorMessage && (
+                  <p className="text-red-500 text-sm text-center animate-fade-in">
+                    {errorMessage}
+                  </p>
+                )}
               </form>
             </div>
           </div>
