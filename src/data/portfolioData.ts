@@ -2,12 +2,12 @@ export const personalInfo = {
   name: "Ahmad Afandi",
   title: "Full Stack Developer",
   tagline:
-    "Full-stack developer specializing in scalable backend systems with Go and PHP",
+    "Web developer specializing in scalable backend systems with Go and PHP",
   email: "ahmad.afandi.cv@gmail.com",
-  phone: "+62 812 3456 7890",
+  phone: "+62 812 1744 1769",
   location: "Sidoarjo, Indonesia",
   avatar: "/avatar.jpg",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/",
   social: {
     github: "https://github.com/Afaandii",
     linkedin: "https://linkedin.com/in/ahmad-afandii",
@@ -17,14 +17,9 @@ export const personalInfo = {
 };
 
 export const aboutMe = {
-  bio: `I'm a passionate Full Stack Developer with 1+ years of experience building web applications that users love. I specialize in React, Vue, Next.js, Laravel, CodeIgniter, Gin, Golang, PHP, MySQL, PostgreSQL, with a keen eye for UI/UX design and responsive design.
+  bio: `I'm a passionate web developer with over two years of experience building web applications that users love. I'm proficient in PHP, Golang, JavaScript, React.js, Next.js, Gin, Laravel, CodeIgniter, MySQL, and PostgreSQL, with a special focus on UI/UX design and responsive design.
 
-When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while reading the latest tech blogs.`,
-  highlights: [
-    { label: "Years Experience", value: "1+" },
-    { label: "Projects Completed", value: "10+" },
-    { label: "Happy Clients", value: "10+" },
-  ],
+When I'm not coding, you'll find me exploring new technologies or enjoying a cup of coffee while reading the latest tech blogs.`,
 };
 
 export const skills = {
@@ -53,7 +48,6 @@ export const skills = {
     { name: "Supabase", level: 85 },
     { name: "Git", level: 90 },
     { name: "Composer", level: 90 },
-    { name: "Figma", level: 80 },
   ],
 };
 
@@ -91,46 +85,13 @@ export const projects = [
     githubUrl: "https://github.com/SyncDevelop/nailart-eyelash-landing-page",
     featured: true,
   },
-  {
-    id: 4,
-    title: "Fitness Tracking App",
-    description:
-      "Mobile-first fitness tracking application with workout plans, nutrition logging, and social features.",
-    image: "/img/fitness.jpg",
-    tags: ["React Native", "Node.js", "GraphQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/johndoe/fitness",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Real Estate Platform",
-    description:
-      "Property listing and management platform with virtual tours and mortgage calculator.",
-    image: "/img/realestate.jpg",
-    tags: ["Vue.js", "Django", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/johndoe/realestate",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Learning Management System",
-    description:
-      "Complete LMS with course creation, student progress tracking, and certification system.",
-    image: "/img/lms.jpg",
-    tags: ["Next.js", "Prisma", "AWS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/johndoe/lms",
-    featured: false,
-  },
 ];
 
 export const experience = [
   {
     id: 1,
     type: "Intership",
-    title: "Junior Backend Developer",
+    title: "Junior Programmer",
     company: "CV Purnama Kreatifa",
     location: "Sidoarjo, Indonesia",
     period: "January - April 2025",
