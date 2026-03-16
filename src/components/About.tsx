@@ -43,20 +43,6 @@ export default function About() {
                 ))}
               </div>
 
-              {/* Stats - Streamlined Text Only */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-6 border-y border-border/10">
-                {aboutMe.highlights.map((stat, index) => (
-                  <div key={index} className="text-center md:text-left">
-                    <p className="text-3xl font-bold text-primary mb-1">
-                      {stat.value}
-                    </p>
-                    <p className="text-muted text-xs upperca  se tracking-widest">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-
               {/* CTA */}
               <div className="flex gap-4 pt-4">
                 <a
