@@ -7,17 +7,17 @@ export const personalInfo = {
   phone: "+62 812 1744 1769",
   location: "Sidoarjo, Indonesia",
   avatar: "/avatar.jpg",
-  resumeUrl: "/",
+  resumeUrl: "/assets/Ahmad_Afandi.pdf",
   social: {
     github: "https://github.com/Afaandii",
     linkedin: "https://linkedin.com/in/ahmad-afandii",
     telegram: "https://t.me/Afandi0108",
-    instagram: "https://instagram.com/afandiii._",
+    instagram: "https://instagram.com/ahmdafaandi",
   },
 };
 
 export const aboutMe = {
-  bio: `I'm a passionate web developer with over two years of experience building web applications that users love. I'm proficient in PHP, Golang, JavaScript, React.js, Next.js, Gin, Laravel, CodeIgniter, MySQL, and PostgreSQL, with a special focus on UI/UX design and responsive design.
+  bio: `I'm a passionate web developer with over three years of experience building web applications that users love. I'm proficient in PHP, Golang, JavaScript, React.js, Next.js, Gin, Laravel, CodeIgniter, MySQL, and PostgreSQL, with a special focus on UI/UX design and responsive design.
 
 When I'm not coding, you'll find me exploring new technologies or enjoying a cup of coffee while reading the latest tech blogs.`,
 };
