@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Ahmad Afandi",
+  title: "Ahmad Afandi",
   description:
     "Personal portfolio website of Ahmad Afandi - Full Stack Developer specializing in React.js, Next.js, Node.js, Go, and PHP. Available for freelance work and full-time opportunities.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ahmad Afandi" }],
   openGraph: {
-    title: "Portfolio Ahmad Afandi",
+    title: "Ahmad Afandi",
     description: "Personal portfolio website showcasing my projects and skills",
     type: "website",
   },
