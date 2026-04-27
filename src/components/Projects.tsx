@@ -179,15 +179,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         <div className="absolute inset-0 bg-background/5" />
 
         {/* Hover Overlay with Buttons */}
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-3">
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2.5 rounded-lg bg-primary text-background text-sm font-medium hover:opacity-90 transition-all hover:-translate-y-0.5"
-          >
-            Live Demo
-          </a>
+        <div className="absolute inset-0 bg-background/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-3">
           <a
             href={project.githubUrl}
             target="_blank"
