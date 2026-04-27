@@ -59,7 +59,6 @@ export const projects = [
       "E-commerce platform with payment integration, inventory management, and report laba.",
     image: "/img/distro-zone.png",
     tags: ["React.js", "Golang", "PostgreSQL", "Supabase"],
-    liveUrl: "https://aplikasi-distro-zone-lsp-website.vercel.app",
     githubUrl: "https://github.com/Afaandii/aplikasi-distro-zone-lsp-website",
     featured: true,
   },
@@ -70,7 +69,6 @@ export const projects = [
       "Alamon Go company profile web application, for branding the Alamon Go milk business",
     image: "/img/company-profile.png",
     tags: ["Svelte", "Laravel", "Tailwind CSS"],
-    liveUrl: "https://company-profile-app-three.vercel.app",
     githubUrl: "https://github.com/Afaandii/company-profile-app",
     featured: true,
   },
@@ -81,7 +79,6 @@ export const projects = [
       "Molashes Landing page website for branding salon nail art and eyelash businesses.",
     image: "/img/molashes-salon.png",
     tags: ["HTML", "CSS", "Javascript"],
-    liveUrl: "https://syncdevelop.github.io/nailart-eyelash-landing-page",
     githubUrl: "https://github.com/SyncDevelop/nailart-eyelash-landing-page",
     featured: true,
   },
@@ -91,16 +88,17 @@ export const experience = [
   {
     id: 1,
     type: "Intership",
-    title: "Junior Programmer",
+    title: "Fullstack Developer",
     company: "CV Purnama Kreatifa",
     location: "Sidoarjo, Indonesia",
-    period: "January - April 2025",
+    period: "January - May 2025",
     description:
-      "Development ERP apps of web applications with tech stack CodeIgniter 3 and git for colabortion teams.",
+      "Development of a web-based ERP (E-Procurement) application using the CodeIgniter 3 technology stack for the backend and Bootstrap for the frontend, along with Git for a collaborative team of six members who have integrated CI/CD with GitHub Actions.",
     highlights: [
-      "Developing ERP applications with CodeIgniter 3",
-      "Using Git to colaboration teams",
-      "Using Sftp and FileZilla to transfer, manage, and access files between systems over a network",
+      "Developed and maintained an E-Procurement ERP application using CodeIgniter 3 and PostgreSQL, focusing on robust back-end logic and data integrity.",
+      "Analyzed and optimized ERD (Entity Relationship Diagrams), including creating new tables and modifying column structures to meet complex business requirements.",
+      "Collaborative Team Worked within a 6-person development team using Git/GitHub for version control, ensuring smooth code integration and conflict resolution",
+      "Performed rigorous debugging and system analysis to identify bottlenecks, fix functional bugs, and improve overall web application performance."
     ],
   },
   // {
