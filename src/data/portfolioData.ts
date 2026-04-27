@@ -60,7 +60,7 @@ export const projects = [
     image: "/img/inventaris.png",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap", "MySQL"],
     githubUrl: "https://github.com/Afaandii/inventaris-mvc",
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const projects = [
     image: "/img/company-profile.png",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "Svelte", "Laravel", "Tailwind CSS"],
     githubUrl: "https://github.com/Afaandii/company-profile-app",
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
