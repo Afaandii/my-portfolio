@@ -26,7 +26,6 @@ import {
   SiPhp,
   SiJavascript,
   SiBootstrap,
-  SiComposer,
   SiExpress,
   SiLaravel,
   SiGin,
@@ -105,7 +104,6 @@ export default function Skills() {
               },
               { n: "Gin", e: <SiGin className="w-full h-full" /> },
               { n: "Node.js", e: <SiNodedotjs className="w-full h-full" /> },
-              { n: "Composer", e: <SiComposer className="w-full h-full" /> },
               { n: "Supabase", e: <SiSupabase className="w-full h-full" /> },
               {
                 n: "PostgreSQL",
