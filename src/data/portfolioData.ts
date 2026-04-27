@@ -54,32 +54,62 @@ export const skills = {
 export const projects = [
   {
     id: 1,
-    title: "Distro Zone E-Commerce",
+    title: "Inventaris Barang",
     description:
-      "E-commerce platform with payment integration, inventory management, and report laba.",
-    image: "/img/distro-zone.png",
-    tags: ["React.js", "Golang", "PostgreSQL", "Supabase"],
-    githubUrl: "https://github.com/Afaandii/aplikasi-distro-zone-lsp-website",
+      "Application for inventory management using PHP Native and Bootstrap for frontend and MySQL for database.",
+    image: "/img/inventaris.png",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap", "MySQL"],
+    githubUrl: "https://github.com/Afaandii/inventaris-mvc",
     featured: true,
   },
   {
     id: 2,
     title: "Company Profile",
     description:
-      "Alamon Go company profile web application, for branding the Alamon Go milk business",
+      "Alamon Go company profile web application, for branding the Alamon Go milk business.",
     image: "/img/company-profile.png",
-    tags: ["Svelte", "Laravel", "Tailwind CSS"],
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "Svelte", "Laravel", "Tailwind CSS"],
     githubUrl: "https://github.com/Afaandii/company-profile-app",
     featured: true,
   },
   {
     id: 3,
+    title: "Distro Zone E-Commerce",
+    description:
+      "E-commerce platform with payment integration, inventory management, and report laba.",
+    image: "/img/distro-zone.png",
+    tags: ["TypeScript", "React.js", "Golang", "Gorm", "PostgreSQL", "Supabase", "JWT"],
+    githubUrl: "https://github.com/Afaandii/aplikasi-distro-zone-lsp-website",
+    featured: true,
+  },
+  {
+    id: 4,
     title: "Molashes salon landing page",
     description:
       "Molashes Landing page website for branding salon nail art and eyelash businesses.",
     image: "/img/molashes-salon.png",
     tags: ["HTML", "CSS", "Javascript"],
     githubUrl: "https://github.com/SyncDevelop/nailart-eyelash-landing-page",
+    featured: true,
+  },
+  {
+    id: 5,
+    title: "Newstest App",
+    description:
+      "Newstest App is a web application that allows users to read news articles from various sources.",
+    image: "/img/newstest.png",
+    tags: ["TypeScript", "Golang", "Gin", "Gorm", "Next.js", "PostgreSQL", "Supabase", "JWT"],
+    githubUrl: "https://github.com/Afaandii/newstest-web-app",
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "DistroZone Desktop POS App",
+    description:
+      "Desktop POS Application for DistroZone shop to manage sales, expenses and inventory build with java and postgreSQL for dbms",
+    image: "/img/distro-zone-desktop.png",
+    tags: ["Java", "JavaFX", "PostgreSQL", "Supabase"],
+    githubUrl: "https://github.com/Afaandii/aplikasi-distro-zone-lsp-desktop",
     featured: true,
   },
 ];

@@ -142,6 +142,7 @@ export default function Projects() {
 }
 
 function ProjectCard({ project, index }: { project: any; index: number }) {
+  const [showAllTags, setShowAllTags] = useState(false);
   const [imgError, setImgError] = useState(false);
 
   // Helper to handle image paths
@@ -199,7 +200,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
         <p className="text-muted text-sm mb-4 line-clamp-2">
           {project.description}
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 items-center">
           {project.tags.slice(0, 3).map((tag: string) => (
             <span
               key={tag}
@@ -208,11 +209,66 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
               {tag}
             </span>
           ))}
-          {project.tags.length > 3 && (
-            <span className="px-3 py-1 rounded-full text-xs font-medium bg-surface text-muted border border-border">
-              +{project.tags.length - 3}
-            </span>
+
+          {project.tags.length > 3 && !showAllTags && (
+            <button
+              onClick={() => setShowAllTags(true)}
+              className="px-3 py-1 rounded-full text-xs font-medium bg-surface text-muted border border-border hover:border-primary hover:text-primary transition-all active:scale-95 flex items-center gap-1 group/btn"
+            >
+              <span>+{project.tags.length - 3}</span>
+              <svg
+                className="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
           )}
+
+          {/* Additional Tags Container */}
+          <div
+            className={`flex flex-wrap gap-2 transition-all duration-500 ease-in-out overflow-hidden ${showAllTags
+              ? "max-h-[200px] opacity-100 translate-y-0"
+              : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
+              }`}
+          >
+            {project.tags.slice(3).map((tag: string) => (
+              <span
+                key={tag}
+                className="px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20"
+              >
+                {tag}
+              </span>
+            ))}
+            {showAllTags && (
+              <button
+                onClick={() => setShowAllTags(false)}
+                className="px-3 py-1 rounded-full text-xs font-medium bg-surface text-muted border border-border hover:border-primary hover:text-primary transition-all active:scale-95 flex items-center gap-1 group/btn"
+              >
+                <span>Show Less</span>
+                <svg
+                  className="w-3 h-3 rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
