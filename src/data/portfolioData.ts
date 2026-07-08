@@ -68,7 +68,15 @@ export const projects = [
     description:
       "Alamon Go company profile web application, for branding the Alamon Go milk business.",
     image: "/img/company-profile.png",
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "Svelte", "Laravel", "Tailwind CSS"],
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "Svelte",
+      "Laravel",
+      "Tailwind CSS",
+    ],
     githubUrl: "https://github.com/Afaandii/company-profile-app",
     featured: false,
   },
@@ -78,7 +86,15 @@ export const projects = [
     description:
       "E-commerce platform with payment integration, inventory management, and report laba.",
     image: "/img/distro-zone.png",
-    tags: ["TypeScript", "React.js", "Golang", "Gorm", "PostgreSQL", "Supabase", "JWT"],
+    tags: [
+      "TypeScript",
+      "React.js",
+      "Golang",
+      "Gorm",
+      "PostgreSQL",
+      "Supabase",
+      "JWT",
+    ],
     githubUrl: "https://github.com/Afaandii/aplikasi-distro-zone-lsp-website",
     featured: true,
   },
@@ -98,7 +114,16 @@ export const projects = [
     description:
       "Newstest App is a web application that allows users to read news articles from various sources.",
     image: "/img/newstest.png",
-    tags: ["TypeScript", "Golang", "Gin", "Gorm", "Next.js", "PostgreSQL", "Supabase", "JWT"],
+    tags: [
+      "TypeScript",
+      "Golang",
+      "Gin",
+      "Gorm",
+      "Next.js",
+      "PostgreSQL",
+      "Supabase",
+      "JWT",
+    ],
     githubUrl: "https://github.com/Afaandii/newstest-web-app",
     featured: true,
   },
@@ -128,7 +153,24 @@ export const experience = [
       "Developed and maintained an E-Procurement ERP application using CodeIgniter 3 and PostgreSQL, focusing on robust back-end logic and data integrity.",
       "Analyzed and optimized ERD (Entity Relationship Diagrams), including creating new tables and modifying column structures to meet complex business requirements.",
       "Collaborative Team Worked within a 6-person development team using Git/GitHub for version control, ensuring smooth code integration and conflict resolution",
-      "Performed rigorous debugging and system analysis to identify bottlenecks, fix functional bugs, and improve overall web application performance."
+      "Performed rigorous debugging and system analysis to identify bottlenecks, fix functional bugs, and improve overall web application performance.",
+    ],
+  },
+  {
+    id: 2,
+    type: "Internship",
+    title: "Fullstack Developer And IT Support",
+    company: "RS Manyar Medika Centre Surabaya",
+    location: "Surabaya, Indonesia",
+    period: "May - July 2026",
+    description:
+      "Maintained and optimized web-based Electronic Medical Records (ERM) and Human Resources (HRM) applications using CodeIgniter 4 and MySQL. Balanced software development with comprehensive IT technical support to ensure seamless day-to-day hospital operations and optimal infrastructure performance.",
+    highlights: [
+      "Maintained and developed web-based ERM (Electronic Medical Records) and HR applications leveraging the CodeIgniter 4 framework and MySQL database.",
+      "Analyzed and optimized database query performance utilizing MVC model logic to significantly improve web application response times.",
+      "Executed regular data maintenance, including data migration, Excel-based data updates assigned by management, and cross-unit transaction data reconciliation.",
+      "Conducted comprehensive system debugging and analysis to identify bottlenecks, fix functional bugs, and maintain application stability.",
+      "Supported daily technical support, including maintenance and troubleshooting of computer hardware, printers, and local area networks (LANs) across all hospital units.",
     ],
   },
   // {
