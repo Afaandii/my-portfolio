@@ -173,51 +173,6 @@ export const experience = [
       "Supported daily technical support, including maintenance and troubleshooting of computer hardware, printers, and local area networks (LANs) across all hospital units.",
     ],
   },
-  // {
-  //   id: 2,
-  //   type: "work",
-  //   title: "Full Stack Developer",
-  //   company: "Digital Solutions Ltd.",
-  //   location: "Bandung, Indonesia",
-  //   period: "2020 - 2022",
-  //   description:
-  //     "Developed and maintained multiple client projects using modern web technologies.",
-  //   highlights: [
-  //     "Built 15+ client websites and web applications",
-  //     "Introduced TypeScript to the tech stack",
-  //     "Mentored 3 junior developers",
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   type: "work",
-  //   title: "Frontend Developer",
-  //   company: "Creative Agency",
-  //   location: "Jakarta, Indonesia",
-  //   period: "2019 - 2020",
-  //   description:
-  //     "Created responsive and interactive user interfaces for various client projects.",
-  //   highlights: [
-  //     "Developed pixel-perfect UI implementations",
-  //     "Collaborated closely with designers",
-  //     "Improved website performance scores",
-  //   ],
-  // },
-  // {
-  //   id: 4,
-  //   type: "education",
-  //   title: "Bachelor of Computer Science",
-  //   company: "University of Indonesia",
-  //   location: "Depok, Indonesia",
-  //   period: "2015 - 2019",
-  //   description:
-  //     "Graduated with honors. Focus on software engineering and web development.",
-  //   highlights: [
-  //     "GPA: 3.8/4.0",
-  //     "Best Final Project Award",
-  //     "Active in programming community",
-  //   ],
-  // },
 ];
 
 export const services = [
