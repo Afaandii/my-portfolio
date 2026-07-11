@@ -121,10 +121,11 @@ export default function Projects() {
             <button
               key={f}
               onClick={() => setFilter(f as "all" | "featured")}
-              className={`px-6 py-2.5 rounded-full font-medium transition-all ${filter === f
-                ? "bg-primary text-background shadow-lg"
-                : "bg-surface border border-border hover:border-primary text-muted hover:text-foreground"
-                }`}
+              className={`px-6 py-2.5 rounded-full font-medium transition-all ${
+                filter === f
+                  ? "bg-primary text-background shadow-lg"
+                  : "bg-surface border border-border hover:border-primary text-muted hover:text-foreground"
+              }`}
             >
               {f === "all" ? "All Projects" : "Featured"}
             </button>
@@ -234,10 +235,11 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
 
           {/* Additional Tags Container */}
           <div
-            className={`flex flex-wrap gap-2 transition-all duration-500 ease-in-out overflow-hidden ${showAllTags
-              ? "max-h-[200px] opacity-100 translate-y-0"
-              : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
-              }`}
+            className={`flex flex-wrap gap-2 transition-all duration-500 ease-in-out overflow-hidden ${
+              showAllTags
+                ? "max-h-50 opacity-100 translate-y-0"
+                : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
+            }`}
           >
             {project.tags.slice(3).map((tag: string) => (
               <span
