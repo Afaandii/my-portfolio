@@ -17,9 +17,10 @@ export const personalInfo = {
 };
 
 export const aboutMe = {
-  bio: `I'm a passionate web developer with over three years of experience building web applications that users love. I'm proficient in PHP, Golang, JavaScript, React.js, Next.js, Gin, Laravel, CodeIgniter, MySQL, and PostgreSQL, with a special focus on UI/UX design and responsive design.
+  bio: `I am a passionate Web Developer specializing in Backend Development and Database Design. I focus on building robust, scalable server-side systems and high-performance APIs that power seamless user experiences. Proficient in Golang (Gin), PHP (Laravel, CodeIgniter), Java, and JavaScript/TypeScript (React.js, Next.js), I thrive on turning complex business logic into clean, maintainable, and secure code.
+  As a proactive developer, I constantly sharpen my technical edge by engineering real-world projects and exploring modern software architectures. Whether designing efficient relational databases with MySQL and PostgreSQL or optimizing API performance, I am dedicated to delivering clean code that helps businesses scale effectively.
 
-When I'm not coding, you'll find me exploring new technologies or enjoying a cup of coffee while reading the latest tech blogs.`,
+  When I'm not coding, you'll find me exploring new technologies or enjoying a cup of coffee while reading the latest tech blogs.`,
 };
 
 export const skills = {
