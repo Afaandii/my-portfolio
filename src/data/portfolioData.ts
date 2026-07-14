@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Ahmad Afandi",
-  title: "Full Stack Developer",
+  title: "Full Stack Web Developer",
   tagline:
-    "Web developer specializing in scalable backend systems with Go and PHP",
-  email: "ahmad.afandi.cv@gmail.com",
+    "FullStack Web developer specializing in scalable backend systems with PHP and Go",
+  email: "ahmdafaandi@gmail.com",
   phone: "+62 812 1744 1769",
   location: "Sidoarjo, Indonesia",
   avatar: "/avatar.jpg",
