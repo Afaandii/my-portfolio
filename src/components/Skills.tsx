@@ -6,11 +6,8 @@ import {
   FaCode,
   FaServer,
   FaTools,
-  FaPython,
   FaGitAlt,
-  FaAws,
   FaDocker,
-  FaPhp,
   FaJava,
 } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
@@ -30,6 +27,7 @@ import {
   SiLaravel,
   SiGin,
   SiCodeigniter,
+  SiRedis,
 } from "react-icons/si";
 
 const skillCategories = [
@@ -111,6 +109,8 @@ export default function Skills() {
               },
               { n: "MySQL", e: <SiMysql className="w-full h-full" /> },
               { n: "Git", e: <FaGitAlt className="w-full h-full" /> },
+              { n: "Docker", e: <FaDocker className="w-full h-full" /> },
+              { n: "Redis", e: <SiRedis className="w-full h-full" /> },
             ].map((t, i) => (
               <div
                 key={t.n}
